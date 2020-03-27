@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="author" content="Eliel Rámirez - Tutor:Daniel López F">
+    <meta name="keywords" content="Galeria, workshop, HTML, CSS3">
+    <meta name="description" content="Galeria de fotos - Clase impartida por Daniel López F en UDEMY">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/modernizr.js"></script>
+    <script src="./js/prefixfree.js"></script>
+    <script src="./js/scrollomatic.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("a.scroll").scrollomatic();
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <a href="#home" class="scroll">
+            <div id="logo"></div>
+        </a>
+        <nav>
+            <ul>
+                <li><a class="scroll" href="#home">home</a></li>
+                <li><a class="scroll" href="#themes">temas</a></li>
+                <li><a class="scroll" href="#galery">galerias</a></li>
+                <li><a class="scroll" href="#contact-us">contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="content">
+        <video autoplay="autoplay" loop="loop" preload="auto">
+            <source src="./video/video.mp4" type="video/mp4">
+            <source src="./video/video.ogv" type="video/ogv">
+            <source src="./video/video.webm" type="video/webm">
+            <p>Your Browser dont support Video elements<br>Try a <a href="#">extrernal link </a></p>
+        </video>
+
+        <section id="home">
+            <div id="ballon"></div>
+            <h2>Bienvenido al curso de <span>HTML & CSS3</span> </h2>j
+            <p>Texto simulado a nivel de texto descriptivo Texto simulado a nivel de texto descriptivo Texto simulado a nivel de texto descriptivo Texto simulado a nivel de texto descriptivo Texto simulado a nivel de texto descriptivo</p>
+            <a href="#themes" class="scroll">Conozca más</a>
+            <div id="down"></div>
+        </section>
+
+        <section id="themes">
+            <h3>Temas</h3>
+            <article>
+                <div id="images1"></div>
+                <h4>Subtítulo nivel 4</h4>
+                <p>Texto simulado a nivel de texto descriptivo aqui Texto simulado a nivel de texto descriptivo aqui</p>
+                <a href="#" class="scroll">Leer más</a>
+                <div id="images2"></div>
+                <h4>Subtítulo nivel 4</h4>
+                <p>Texto simulado a nivel de texto descriptivo aqui Texto simulado a nivel de texto descriptivo aqui</p>
+                <a href="#" class="scroll">Leer más</a>
+                <div id="images3"></div>
+                <h4>Subtítulo nivel 4</h4>
+                <p>Texto simulado a nivel de texto descriptivo aqui Texto simulado a nivel de texto descriptivo aqui</p>
+                <a href="#" class="scroll">Leer más</a>
+            </article>
+        </section>
+        <section id="galery">
+            <h3>Galeria </h3>
+            <div id="photos">
+                <a href="#" class="scroll" title="Imagen1"><img src="./img/1.jpg" alt="Imagen1"></a>
+                <a href="#" class="scroll" title="Imagen2"><img src="./img/2.jpg" alt="Imagen2"></a>
+                <a href="#" class="scroll" title="Imagen3"><img src="./img/3.jpg" alt="Imagen3"></a>
+                <a href="#" class="scroll" title="Imagen4"><img src="./img/4.jpg" alt="Imagen4"></a>
+                <a href="#" class="scroll" title="Imagen5"><img src="./img/5.jpg" alt="Imagen5"></a>
+                <a href="#" class="scroll" title="Imagen6"><img src="./img/6.jpg" alt="Imagen6"></a>
+                <a href="#" class="scroll" title="Imagen7"><img src="./img/7.jpg" alt="Imagen7"></a>
+                <a href="#" class="scroll" title="Imagen8"><img src="./img/8.jpg" alt="Imagen8"></a>
+                <a href="#" class="scroll" title="Imagen9"><img src="./img/9.jpg" alt="Imagen9"></a>
+            </div>
+
+        </section>
+        <section id="contact-us">
+            <h3>Contáctenos</h3>
+            <div id="form">
+                <form action="" method="post">
+                    <input type="text" name="name" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="tel" name="telephone" placeholder="Telefono" required pattern="[0-9]{3}\s[0-9]{3}\s[0-9]{4}$" title="Debe ser un numero telefónico con la estructura XXX XXX XXXX teniendo en cuenta los espacios">
+                    <textarea name="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                    <input type="submit" value="Enviar datos">
+                </form>
+            </div>
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14665.075079382414!2d-106.3864737414614!3d23.233304722934523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smx!4v1585254175637!5m2!1sen!2smx" width="100%" height="480px"></iframe>
+            </div>
+            <a href="#content" class="up scroll"></a>
+        </section>
+
+    </main>
+    <footer>
+        <p> Copyright &copy;
+            <script>
+                document.write(new Date().getFullYear())
+            </script> Eliel Rámirez - Todos los derechos reservados</p>
+        <p>
+    </footer>
+
+</body>
+
+</html>
