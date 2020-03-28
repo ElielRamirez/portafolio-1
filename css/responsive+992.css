@@ -1,0 +1,36 @@
+@media screen and (max-width:992px) {
+    header {
+        background-color: rgba(0, 0, 0, 0.9) !important;
+    }
+    header label {
+        display: block !important;
+    }
+    nav {
+        display: none;
+        float: none !important;
+        width: 100% !important;
+        height: 100vh !important;
+    }
+    ul {
+        padding-left: 0em;
+    }
+    ul li {
+        display: block;
+        border: none;
+        border-right: none!important;
+        border-bottom: solid .031253em rgba(255, 255, 255, 1);
+        width: 100%;
+        text-align: left;
+    }
+    ul li:hover {
+        background: rgba(0, 210, 110, 1);
+    }
+    ul li a {
+        display: block;
+        width: 100%;
+    }
+    ul li a:hover,
+    ul li a:active {
+        color: rgba(255, 255, 255, 1) !important;
+    }
+}
